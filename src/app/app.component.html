@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="margin-top:20px; margin-bottom: 20px; text-align: center">
+    <img src="assets/biomerieux.png" width="200px;">
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <form class="form-inline">
+          <input [(ngModel)]="newWord" style="width: 70%" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="sampleWord" placeholder="Entrez un mot">
+          <button class="btn btn-primary color1" (click)="update()">Go</button>
+          <button class="btn btn-primary color2" (click)="exportPNG()">Enregistrer</button>
+      </form>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>
+<div class="auto-width">
+    <div class="auto-width" #myIdentifier>
+        <div AgWordCloud
+        #word_cloud_chart=ag-word-cloud 
+        [wordData]="word_cloud"
+         [options]="options"
+         [width]="canvasWidth"
+         [height]="500">
+        </div>
+    </div>
+</div>
+
+
