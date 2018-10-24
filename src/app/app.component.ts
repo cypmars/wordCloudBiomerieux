@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { AgWordCloudData, AgWordCloudDirective, AgWordCloudModule } from 'angular4-word-cloud';
+import { AgWordCloudData, AgWordCloudDirective, AgWordCloudModule } from 'angular4-word-cloud-mouse-events';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 @Component({
   selector: 'app-root',
