@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AgWordCloudModule } from 'angular4-word-cloud';
+import { AgWordCloudModule } from 'angular4-word-cloud-mouse-events';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 @NgModule({
